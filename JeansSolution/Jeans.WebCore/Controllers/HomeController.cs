@@ -42,7 +42,7 @@ namespace Jeans.WebCore.Controllers
             {
                 Id = Guid.NewGuid(),
                 ParentId = Guid.Empty,
-                MenuName = "资质管理",
+                MenuName = "Demo管理",
                 IconClass = "fa-link",
                 Sort = 3
             };
