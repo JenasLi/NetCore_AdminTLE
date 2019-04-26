@@ -1,0 +1,108 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeans.WebCore", "Jeans.WebCore\Jeans.WebCore.csproj", "{978C5C65-3922-481D-A71F-49719CEC1F54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApps", "WebApps", "{F1280FA7-D56C-4B00-AF22-F80ED66E6C44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{C8BC515C-CE84-491B-AEA3-8309F4B0B121}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{D4A9A48E-EFB7-4CBD-857C-BB273DAD143E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Identity", "Identity", "{C8B4B0AB-16CB-4B80-A1C4-ECB6786FC4A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeans.User.Core", "Jeans.User.Core\Jeans.User.Core.csproj", "{F1E0E545-DB65-4763-A722-75F0E807C6BC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeans.User.Services", "Jeans.User.Services\Jeans.User.Services.csproj", "{51D0F986-E33F-4E42-AA17-B55DA4B4523D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeans.User.Data", "Jeans.User.Data\Jeans.User.Data.csproj", "{AEA4E320-D597-47C5-BB7E-A1CF99BD6321}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeans.User.API", "Jeans.User.API\Jeans.User.API.csproj", "{EDB07764-5AEB-4566-92A4-C305ED495EAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Commons", "Commons", "{6E3BE867-75FA-4487-8B7F-FB807754DF39}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resilience", "Resilience", "{20C4E4FF-F7B1-4049-9082-99A72094D13C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeans.Http", "Jeans.Http\Jeans.Http.csproj", "{7D686FA8-2C96-474C-9936-242393060F4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{978C5C65-3922-481D-A71F-49719CEC1F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978C5C65-3922-481D-A71F-49719CEC1F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978C5C65-3922-481D-A71F-49719CEC1F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978C5C65-3922-481D-A71F-49719CEC1F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1E0E545-DB65-4763-A722-75F0E807C6BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1E0E545-DB65-4763-A722-75F0E807C6BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1E0E545-DB65-4763-A722-75F0E807C6BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1E0E545-DB65-4763-A722-75F0E807C6BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51D0F986-E33F-4E42-AA17-B55DA4B4523D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51D0F986-E33F-4E42-AA17-B55DA4B4523D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51D0F986-E33F-4E42-AA17-B55DA4B4523D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51D0F986-E33F-4E42-AA17-B55DA4B4523D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEA4E320-D597-47C5-BB7E-A1CF99BD6321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEA4E320-D597-47C5-BB7E-A1CF99BD6321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEA4E320-D597-47C5-BB7E-A1CF99BD6321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEA4E320-D597-47C5-BB7E-A1CF99BD6321}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDB07764-5AEB-4566-92A4-C305ED495EAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDB07764-5AEB-4566-92A4-C305ED495EAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDB07764-5AEB-4566-92A4-C305ED495EAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDB07764-5AEB-4566-92A4-C305ED495EAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D686FA8-2C96-474C-9936-242393060F4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D686FA8-2C96-474C-9936-242393060F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D686FA8-2C96-474C-9936-242393060F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D686FA8-2C96-474C-9936-242393060F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{978C5C65-3922-481D-A71F-49719CEC1F54} = {F1280FA7-D56C-4B00-AF22-F80ED66E6C44}
+		{D4A9A48E-EFB7-4CBD-857C-BB273DAD143E} = {C8BC515C-CE84-491B-AEA3-8309F4B0B121}
+		{C8B4B0AB-16CB-4B80-A1C4-ECB6786FC4A6} = {C8BC515C-CE84-491B-AEA3-8309F4B0B121}
+		{F1E0E545-DB65-4763-A722-75F0E807C6BC} = {D4A9A48E-EFB7-4CBD-857C-BB273DAD143E}
+		{51D0F986-E33F-4E42-AA17-B55DA4B4523D} = {D4A9A48E-EFB7-4CBD-857C-BB273DAD143E}
+		{AEA4E320-D597-47C5-BB7E-A1CF99BD6321} = {D4A9A48E-EFB7-4CBD-857C-BB273DAD143E}
+		{EDB07764-5AEB-4566-92A4-C305ED495EAC} = {D4A9A48E-EFB7-4CBD-857C-BB273DAD143E}
+		{20C4E4FF-F7B1-4049-9082-99A72094D13C} = {6E3BE867-75FA-4487-8B7F-FB807754DF39}
+		{7D686FA8-2C96-474C-9936-242393060F4F} = {20C4E4FF-F7B1-4049-9082-99A72094D13C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9083839E-85B1-42A4-A757-67D3D19A2977}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://lijiansoftware.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Jeans.Http\\Jeans.Http.csproj
+		SccProjectTopLevelParentUniqueName1 = JeansSolution.sln
+		SccProjectName1 = Jeans.Http
+		SccLocalPath1 = Jeans.Http
+		SccProjectUniqueName2 = Jeans.User.API\\Jeans.User.API.csproj
+		SccProjectTopLevelParentUniqueName2 = JeansSolution.sln
+		SccProjectName2 = Jeans.User.API
+		SccLocalPath2 = Jeans.User.API
+		SccProjectUniqueName3 = Jeans.User.Core\\Jeans.User.Core.csproj
+		SccProjectTopLevelParentUniqueName3 = JeansSolution.sln
+		SccProjectName3 = Jeans.User.Core
+		SccLocalPath3 = Jeans.User.Core
+		SccProjectUniqueName4 = Jeans.User.Data\\Jeans.User.Data.csproj
+		SccProjectTopLevelParentUniqueName4 = JeansSolution.sln
+		SccProjectName4 = Jeans.User.Data
+		SccLocalPath4 = Jeans.User.Data
+		SccProjectUniqueName5 = Jeans.User.Services\\Jeans.User.Services.csproj
+		SccProjectTopLevelParentUniqueName5 = JeansSolution.sln
+		SccProjectName5 = Jeans.User.Services
+		SccLocalPath5 = Jeans.User.Services
+		SccProjectUniqueName6 = Jeans.WebCore\\Jeans.WebCore.csproj
+		SccProjectTopLevelParentUniqueName6 = JeansSolution.sln
+		SccProjectName6 = Jeans.WebCore
+		SccLocalPath6 = Jeans.WebCore
+	EndGlobalSection
+EndGlobal
