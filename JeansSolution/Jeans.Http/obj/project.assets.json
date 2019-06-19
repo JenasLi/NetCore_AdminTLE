@@ -39,11 +39,12 @@
   },
   "libraries": {
     "Microsoft.NETCore.Platforms/1.1.0": {
-      "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
+      "sha512": "BQd9C4y00kH39xGAa70a6ARgzYm6Bo7YokuMsIvBAXD6OwiJLrTYfYq2uE3iOKlD3flj4/rJZvDoD6iMWtVYYg==",
       "type": "package",
       "path": "microsoft.netcore.platforms/1.1.0",
       "files": [
         ".nupkg.metadata",
+        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/_._",
@@ -181,7 +182,7 @@
       ]
     },
     "Newtonsoft.Json/12.0.1": {
-      "sha512": "pBR3wCgYWZGiaZDYP+HHYnalVnPJlpP1q55qvVb+adrDHmFMDc1NAKio61xTwftK3Pw5h7TZJPJEEVMd6ty8rg==",
+      "sha512": "jmVyoEyk0In8r+AObYQyFKVFm7uSRzE0XSHSbEtBJcZDMV6DqJoyB4FLcHwprPVhAh826so0db3DIKXVnpGoPA==",
       "type": "package",
       "path": "newtonsoft.json/12.0.1",
       "files": [
@@ -227,23 +228,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\01324875\\.nuget\\packages\\": {},
+    "C:\\Users\\Jeans\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\github_code\\NetCore_AdminTLE\\JeansSolution\\Jeans.Http\\Jeans.Http.csproj",
+      "projectUniqueName": "C:\\github_code\\NetCore_AdminTLE\\JeansSolution\\Jeans.Http\\Jeans.Http.csproj",
       "projectName": "Jeans.Http",
-      "projectPath": "F:\\github_code\\NetCore_AdminTLE\\JeansSolution\\Jeans.Http\\Jeans.Http.csproj",
-      "packagesPath": "C:\\Users\\01324875\\.nuget\\packages\\",
-      "outputPath": "F:\\github_code\\NetCore_AdminTLE\\JeansSolution\\Jeans.Http\\obj\\",
+      "projectPath": "C:\\github_code\\NetCore_AdminTLE\\JeansSolution\\Jeans.Http\\Jeans.Http.csproj",
+      "packagesPath": "C:\\Users\\Jeans\\.nuget\\packages\\",
+      "outputPath": "C:\\github_code\\NetCore_AdminTLE\\JeansSolution\\Jeans.Http\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "d:\\user\\01324875\\Application Data\\NuGet\\NuGet.Config",
+        "C:\\Users\\Jeans\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -251,7 +252,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {

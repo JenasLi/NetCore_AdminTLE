@@ -1,10 +1,13 @@
 ﻿using Jeans.WebCore.Models.Account;
+using Jeans.WebCore.Resources;
 using Jeans.WebCore.Services.Account;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Globalization;
 using System.Security.Claims;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Jeans.WebCore.Controllers
@@ -20,6 +23,8 @@ namespace Jeans.WebCore.Controllers
         [AllowAnonymous]
         public IActionResult Login(string returnUrl)
         {
+            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("en-US");
+
             ViewBag.ReturnUrl = returnUrl;            
 
             return View();
@@ -37,7 +42,7 @@ namespace Jeans.WebCore.Controllers
 
             if (!model.HasLogin())
             {
-                ModelState.AddModelError("", "用户名或者密码错误.");
+                ModelState.AddModelError("", Common.UserPwdError);
 
                 return View(model);
             }           

@@ -1,15 +1,16 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Jeans.WebCore.Resources;
 
 namespace Jeans.WebCore.Models.Account
 {
     public class LoginViewModel
     {
-        [Display(Name = "用户名")]
-        [Required(ErrorMessage = "{0} 必填项.")]
+        [Display(Name = "UserName", ResourceType = typeof(UserResource))]
+        [Required(ErrorMessageResourceName = "Required", ErrorMessageResourceType = typeof(Common))]
         public string UserName { get; set; }
 
-        [Display(Name = "密码")]
-        [Required(ErrorMessage = "{0} 必填项.")]
+        [Display(Name = "Password", ResourceType = typeof(UserResource))]
+        [Required(ErrorMessageResourceName = "Required", ErrorMessageResourceType = typeof(Common))]
         public string Password { get; set; }
 
         public bool HasLogin()
