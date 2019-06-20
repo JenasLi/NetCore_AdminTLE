@@ -23,8 +23,6 @@ namespace Jeans.WebCore.Controllers
         [AllowAnonymous]
         public IActionResult Login(string returnUrl)
         {
-            Thread.CurrentThread.CurrentUICulture = CultureInfo.CreateSpecificCulture("en-US");
-
             ViewBag.ReturnUrl = returnUrl;            
 
             return View();
