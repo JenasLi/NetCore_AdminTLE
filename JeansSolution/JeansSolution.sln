@@ -27,6 +27,14 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resilience", "Resilience", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Jeans.Http", "Jeans.Http\Jeans.Http.csproj", "{7D686FA8-2C96-474C-9936-242393060F4F}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ApiGateways", "ApiGateways", "{DD3B8D15-293F-43B4-8FB7-26D22B4BCCB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeans.Ocelot", "Jeans.Ocelot\Jeans.Ocelot.csproj", "{DE5E8EE4-5E79-47FE-8A8E-546BEB643ABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jeans.User.CoreApi", "Jeans.User.CoreApi\Jeans.User.CoreApi.csproj", "{A1D6AA1A-37B2-4687-9CA9-22CDAD8F3F44}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OcelotUsers", "OcelotUsers", "{23C4A6F0-38F8-4B4C-964A-B522BC5C9EDF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +65,14 @@ Global
 		{7D686FA8-2C96-474C-9936-242393060F4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D686FA8-2C96-474C-9936-242393060F4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D686FA8-2C96-474C-9936-242393060F4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE5E8EE4-5E79-47FE-8A8E-546BEB643ABC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE5E8EE4-5E79-47FE-8A8E-546BEB643ABC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE5E8EE4-5E79-47FE-8A8E-546BEB643ABC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE5E8EE4-5E79-47FE-8A8E-546BEB643ABC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1D6AA1A-37B2-4687-9CA9-22CDAD8F3F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1D6AA1A-37B2-4687-9CA9-22CDAD8F3F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1D6AA1A-37B2-4687-9CA9-22CDAD8F3F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1D6AA1A-37B2-4687-9CA9-22CDAD8F3F44}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,38 +87,11 @@ Global
 		{EDB07764-5AEB-4566-92A4-C305ED495EAC} = {D4A9A48E-EFB7-4CBD-857C-BB273DAD143E}
 		{20C4E4FF-F7B1-4049-9082-99A72094D13C} = {6E3BE867-75FA-4487-8B7F-FB807754DF39}
 		{7D686FA8-2C96-474C-9936-242393060F4F} = {20C4E4FF-F7B1-4049-9082-99A72094D13C}
+		{DE5E8EE4-5E79-47FE-8A8E-546BEB643ABC} = {DD3B8D15-293F-43B4-8FB7-26D22B4BCCB8}
+		{A1D6AA1A-37B2-4687-9CA9-22CDAD8F3F44} = {23C4A6F0-38F8-4B4C-964A-B522BC5C9EDF}
+		{23C4A6F0-38F8-4B4C-964A-B522BC5C9EDF} = {D4A9A48E-EFB7-4CBD-857C-BB273DAD143E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9083839E-85B1-42A4-A757-67D3D19A2977}
-	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 7
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://lijiansoftware.visualstudio.com/
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Jeans.Http\\Jeans.Http.csproj
-		SccProjectTopLevelParentUniqueName1 = JeansSolution.sln
-		SccProjectName1 = Jeans.Http
-		SccLocalPath1 = Jeans.Http
-		SccProjectUniqueName2 = Jeans.User.API\\Jeans.User.API.csproj
-		SccProjectTopLevelParentUniqueName2 = JeansSolution.sln
-		SccProjectName2 = Jeans.User.API
-		SccLocalPath2 = Jeans.User.API
-		SccProjectUniqueName3 = Jeans.User.Core\\Jeans.User.Core.csproj
-		SccProjectTopLevelParentUniqueName3 = JeansSolution.sln
-		SccProjectName3 = Jeans.User.Core
-		SccLocalPath3 = Jeans.User.Core
-		SccProjectUniqueName4 = Jeans.User.Data\\Jeans.User.Data.csproj
-		SccProjectTopLevelParentUniqueName4 = JeansSolution.sln
-		SccProjectName4 = Jeans.User.Data
-		SccLocalPath4 = Jeans.User.Data
-		SccProjectUniqueName5 = Jeans.User.Services\\Jeans.User.Services.csproj
-		SccProjectTopLevelParentUniqueName5 = JeansSolution.sln
-		SccProjectName5 = Jeans.User.Services
-		SccLocalPath5 = Jeans.User.Services
-		SccProjectUniqueName6 = Jeans.WebCore\\Jeans.WebCore.csproj
-		SccProjectTopLevelParentUniqueName6 = JeansSolution.sln
-		SccProjectName6 = Jeans.WebCore
-		SccLocalPath6 = Jeans.WebCore
 	EndGlobalSection
 EndGlobal

@@ -34,9 +34,9 @@ namespace Jeans.User.API
 
         private static void Register(ContainerBuilder builder)
         {
-            builder.RegisterGeneric(typeof(EfRepository<>)).As(typeof(IRepository<>));
-            builder.RegisterType<UserContext>().As<IDbContext>();
-            builder.RegisterType<UserService>().As<IUserService>();
+            //builder.RegisterGeneric(typeof(EfRepository<>)).As(typeof(IRepository<>));
+            //builder.RegisterType<UserContext>().As<IDbContext>();
+            //builder.RegisterType<UserService>().As<IUserService>();
         }
     }
 }
