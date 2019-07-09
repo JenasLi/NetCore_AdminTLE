@@ -43,14 +43,19 @@ namespace Jeans.User.CoreApi.Models
         public string ContactName { get; set; }
 
 
-        public IList<UserModel> GetList()
+        public IList<UserModel> GetList(int count)
         {
             Randomizer.Seed = new Random(123456);
             var users = new Faker<UserModel>()
                .RuleFor(c => c.Id, Guid.NewGuid())
-               .RuleFor(c => c.Name, f => f.Company.CompanyName());
+               .RuleFor(c => c.Name, f => f.Person.FullName)
+               .RuleFor(c => c.Address, f => f.Address.FullAddress())
+               .RuleFor(c => c.City, f => f.Person.Address.City)
+               .RuleFor(c => c.Phone, f => f.Phone.PhoneNumber())
+               .RuleFor(c => c.Email, f => f.Person.Email)
+               .RuleFor(c => c.ContactName, f => f.Person.UserName);
 
-            return users.Generate(10);
+            return users.Generate(count);
         }
     }
 }

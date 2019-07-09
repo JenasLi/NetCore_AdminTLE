@@ -1,8 +1,31 @@
 {
   "ReRoutes": [
-    
+    {
+      "DownstreamPathTemplate": "/api/user?pageindex={pageindex}&pagesize={pagesize}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.227.150.158",
+          "Port": 8081
+        }
+      ],
+      "UpstreamPathTemplate": "/user?pageindex={pageindex}&pagesize={pagesize}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/order?pageindex={pageindex}&pagesize={pagesize}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "10.227.150.158",
+          "Port": 8082
+        }
+      ],
+      "UpstreamPathTemplate": "/order/{pageindex}/{pagesize}",
+      "UpstreamHttpMethod": [ "GET" ]
+    }
   ],
   "GlobalConfiguration": {
-    "BaseUrl": ""
+    "BaseUrl": "http://10.227.150.158"
   }
 }
