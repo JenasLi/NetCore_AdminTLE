@@ -19,6 +19,12 @@ namespace Jeans.Ocelot
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .ConfigureAppConfiguration((context, builder) =>
+                {
+                    builder.SetBasePath(context.HostingEnvironment.ContentRootPath)
+                               .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
+                })
+                .UseUrls("10.227.150.158")
                 .UseStartup<Startup>();
     }
 }

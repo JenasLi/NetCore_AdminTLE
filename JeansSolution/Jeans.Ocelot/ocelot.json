@@ -10,7 +10,8 @@
         }
       ],
       "UpstreamPathTemplate": "/user?pageindex={pageindex}&pagesize={pagesize}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "ReRouteIsCaseSensitive": true
     },
     {
       "DownstreamPathTemplate": "/api/order?pageindex={pageindex}&pagesize={pagesize}",
@@ -22,7 +23,8 @@
         }
       ],
       "UpstreamPathTemplate": "/order/{pageindex}/{pagesize}",
-      "UpstreamHttpMethod": [ "GET" ]
+      "UpstreamHttpMethod": [ "GET" ],
+      "ReRouteIsCaseSensitive": true
     }
   ],
   "GlobalConfiguration": {
