@@ -7,6 +7,7 @@ using Microsoft.AspNetCore;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using Ocelot.DependencyInjection;
 
 namespace Jeans.Ocelot
 {
@@ -22,7 +23,8 @@ namespace Jeans.Ocelot
                 .ConfigureAppConfiguration((context, builder) =>
                 {
                     builder.SetBasePath(context.HostingEnvironment.ContentRootPath)
-                               .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
+                               //.AddJsonFile("ocelot.json", optional: false, reloadOnChange: true)
+                               .AddOcelot("OcelotConfig",context.HostingEnvironment);
                 })
                 .UseUrls("http://*")
                 .UseStartup<Startup>();

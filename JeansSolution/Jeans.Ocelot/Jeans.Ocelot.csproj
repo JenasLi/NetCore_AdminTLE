@@ -12,9 +12,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="ocelot.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Folder Include="OcelotConfig\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="OcelotConfig\ocelot.global.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="OcelotConfig\ocelot.order.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="OcelotConfig\ocelot.user.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+
+  <ProjectExtensions><VisualStudio><UserProperties /></VisualStudio></ProjectExtensions>
 
 </Project>
