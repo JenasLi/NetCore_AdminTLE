@@ -24,7 +24,7 @@ namespace Jeans.Ocelot
                     builder.SetBasePath(context.HostingEnvironment.ContentRootPath)
                                .AddJsonFile("ocelot.json", optional: false, reloadOnChange: true);
                 })
-                .UseUrls("10.227.150.158")
+                .UseUrls("http://*")
                 .UseStartup<Startup>();
     }
 }
