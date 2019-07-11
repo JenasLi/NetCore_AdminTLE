@@ -12,7 +12,14 @@
       "UpstreamPathTemplate": "/user?pageindex={pageindex}&pagesize={pagesize}",
       "UpstreamHttpMethod": [ "GET" ],
       "ReRouteIsCaseSensitive": true,
-      "Key": "user"
+      "Key": "user",
+      "RateLimitOptions": {
+        "ClientWhitelist": ["user"],
+        "EnableRateLimiting": true,
+        "Period": "1m",
+        "PeriodTimespan": 30,
+        "Limit": 5
+      }
     }
   ],
   "Aggregates": [
